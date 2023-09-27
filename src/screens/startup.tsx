@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
         fontSize: 15,
         textAlign: 'center',
         marginHorizontal: 25,
-        marginVertical: 8
+        marginVertical: 8,
+        color: colors.primaryText
     },
     sliderText: {
         color: colors.primary,

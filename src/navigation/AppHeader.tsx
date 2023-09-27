@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
         width: DeviceHeight * 0.04,
     },
     welcomeText: {
-        color: colors.primary
+        color: colors.primary,
+        marginBottom: 5,
     },
     header: {
         color: colors.darkText,

@@ -18,7 +18,7 @@ const Stack = createNativeStackNavigator();
 export const RootNavigation = () => {
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="light-content" backgroundColor={colors.primary}/>
+      <StatusBar barStyle="light-content" backgroundColor={colors.primaryText}/>
       <NavigationContainer ref={navigationRef}>
           <Stack.Navigator
             screenOptions={{
