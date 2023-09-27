@@ -9,6 +9,7 @@ import Startup from './screens/startup';
   
 import {Routes} from './navigation/routes';
 import {navigationRef} from './navigation/utils';
+import { HomePage } from './screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,7 +25,7 @@ export const RootNavigation = () => {
               animation: 'none',
             }}>
             <Stack.Screen name={Routes.StartUp} component={Startup} />
-            {/* <Stack.Screen name={Routes.BottomTab} component={BottomTab} /> */}
+            <Stack.Screen name={Routes.HomePage} component={HomePage} />
           </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
