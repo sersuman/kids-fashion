@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar, View} from 'react-native';
+import {StatusBar, View, Text} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {NavigationContainer} from '@react-navigation/native';
@@ -10,17 +10,20 @@ import Startup from './screens/startup';
 import {Routes} from './navigation/routes';
 import {navigationRef} from './navigation/utils';
 import { HomePage } from './screens';
+import colors from './theme/colors';
+import AppHeader from './navigation/AppHeader';
 
 const Stack = createNativeStackNavigator();
 
 export const RootNavigation = () => {
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" backgroundColor={colors.primary}/>
       <NavigationContainer ref={navigationRef}>
           <Stack.Navigator
             screenOptions={{
-              headerShown: false,
+              header:() => <AppHeader/>,
+              headerShown: true,
               gestureEnabled: false,
               animation: 'none',
             }}>
