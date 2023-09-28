@@ -16,7 +16,6 @@ const SwipeComponent = ({ children, customStyles = {}, onSwipeRight }: SwipeProp
         onPanResponderMove: (evt, gestureState) => {
             // Update the position of the child component
             if (gestureState.dx > 0 && gestureState.dx < 170) {
-                console.log("SAS", position)
                 position.setValue(gestureState.dx);
             }
         },
