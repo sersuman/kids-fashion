@@ -4,6 +4,7 @@ const colors = {
     primaryText: '#ffffff',
     darkText: '#000000',
     background: '#f4f4f4',
+    priceBackground: 'rgba(196, 183, 157,0.4)'
 }
 
 export default colors;
